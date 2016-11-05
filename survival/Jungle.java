@@ -18,9 +18,10 @@ public class Jungle
         for (int i = 0; i < people.size(); ++i)
         {
             Person p = people.get(i);
-            text = text + p.name + ":\n";
-            text = text + "Health: " + p.health + "\n";
-            text = text + "Food: " + p.food + "\n";
+            text += p.name + ":\n";
+            text += "Health: " + p.health + "\n";
+            text += "Food: " + p.food + "\n";
+            text += "Luck: " + p.luck + "\n";
             text = text + "\n-------------------------------------------------" + "\n";
         }
         

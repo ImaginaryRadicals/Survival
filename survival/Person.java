@@ -1,10 +1,12 @@
 import javax.swing.JOptionPane;
+import java.util.Random;
 
 public class Person
 {
     public String name;
     public int health = 100;
     public int food = 100;
+    public int luck;
     
     public Person()
     {
@@ -22,6 +24,10 @@ public class Person
             }
         }
         while ( !correctData );
+        
+        Random r = new Random();
+        
+        luck = r.nextInt( 100 );
     }
     
     void nextDay()
